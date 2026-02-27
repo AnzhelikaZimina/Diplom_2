@@ -1,0 +1,131 @@
+[ {
+  "uid" : "3e08b8f3c2a29d19",
+  "name" : "Нельзя создать пользователя без имени",
+  "time" : {
+    "start" : 1772198430737,
+    "stop" : 1772198431067,
+    "duration" : 330
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "297737aa40a10255",
+  "name" : "Проверка создания заказа с неверным хешем ингредиентов",
+  "time" : {
+    "start" : 1772198408735,
+    "stop" : 1772198410908,
+    "duration" : 2173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a0bf6f90aa711ba",
+  "name" : "Проверка успешного входа под существующим пользователем",
+  "time" : {
+    "start" : 1772198434917,
+    "stop" : 1772198435749,
+    "duration" : 832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "533720f21aa896ca",
+  "name" : "Проверка создания заказа без ингредиентов",
+  "time" : {
+    "start" : 1772198415570,
+    "stop" : 1772198416959,
+    "duration" : 1389
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e943e49b167ebf41",
+  "name" : "Проверка что нельзя войти с неверным логином",
+  "time" : {
+    "start" : 1772198435751,
+    "stop" : 1772198436439,
+    "duration" : 688
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c831d07af4852c63",
+  "name" : "Нельзя создать пользователя без пароля",
+  "time" : {
+    "start" : 1772198429021,
+    "stop" : 1772198429346,
+    "duration" : 325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51f62819a34e8539",
+  "name" : "Проверка успешного создания уникального пользователя",
+  "time" : {
+    "start" : 1772198430328,
+    "stop" : 1772198430736,
+    "duration" : 408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1053a5b845dd1033",
+  "name" : "Нельзя создать пользователя без email",
+  "time" : {
+    "start" : 1772198430030,
+    "stop" : 1772198430327,
+    "duration" : 297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9781729cddbdf673",
+  "name" : "Проверка что нельзя войти с неверным паролем",
+  "time" : {
+    "start" : 1772198436440,
+    "stop" : 1772198437215,
+    "duration" : 775
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "903d06db22144940",
+  "name" : "Проверка создания заказа с ингредиентами",
+  "time" : {
+    "start" : 1772198410936,
+    "stop" : 1772198415566,
+    "duration" : 4630
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "749aea3bf0895712",
+  "name" : "Проверка что нельзя создать пользователя, который уже зарегистрирован",
+  "time" : {
+    "start" : 1772198429347,
+    "stop" : 1772198430029,
+    "duration" : 682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "672c84a3a8ad42e3",
+  "name" : "Проверка создания заказа с авторизацией",
+  "time" : {
+    "start" : 1772198418351,
+    "stop" : 1772198422782,
+    "duration" : 4431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1561ac67e87675f7",
+  "name" : "Проверка создания заказа без авторизации",
+  "time" : {
+    "start" : 1772198416959,
+    "stop" : 1772198418349,
+    "duration" : 1390
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

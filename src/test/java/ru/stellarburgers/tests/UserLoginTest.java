@@ -6,6 +6,7 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
+import org.junit.Before;
 import org.junit.Test;
 import ru.stellarburgers.api.UserApi;
 
@@ -14,15 +15,19 @@ import static org.hamcrest.core.IsEqual.equalTo;
 
 public class UserLoginTest extends BaseTest {
 
+    private final String email = RandomStringUtils.randomAlphabetic(10).toLowerCase() + "@test.com";
+    private final String password = RandomStringUtils.randomAlphabetic(10);
+
+    @Before
+    public void setUp() {
+        String name = "TestUser";
+        UserApi.createUser(email, password, name);
+    }
+
     @Test
     @DisplayName("Проверка успешного входа под существующим пользователем")
     @Description("Тест создает пользователя и проверяет, что вход под существующим пользователем возвращает 200 OK")
     public void userShouldLoginSuccessfully() {
-        String email = RandomStringUtils.randomAlphabetic(10).toLowerCase() + "@test.com";
-        String password = RandomStringUtils.randomAlphabetic(10);
-        String name = "TestUser";
-
-        UserApi.createUser(email, password, name);
         Response response = UserApi.loginUser(email, password);
 
         checkIfLoginSuccessful(response);
@@ -40,10 +45,20 @@ public class UserLoginTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("Проверка что нельзя войти с неверным логином и паролем")
+    @DisplayName("Проверка что нельзя войти с неверным логином")
     @Description("Тест проверяет, что при попытке входа с неверными данными сервер возвращает 401 Unauthorized")
-    public void shouldNotLoginWithInvalidCredentials() {
+    public void shouldNotLoginWithInvalidLogin() {
         String email = RandomStringUtils.randomAlphabetic(10).toLowerCase() + "@test.com";
+
+        Response response = UserApi.loginUser(email, password);
+
+        checkIfEmailOrPasswordAreIncorrect(response);
+    }
+
+    @Test
+    @DisplayName("Проверка что нельзя войти с неверным паролем")
+    @Description("Тест проверяет, что при попытке входа с неверными данными сервер возвращает 401 Unauthorized")
+    public void shouldNotLoginWithInvalidPassword() {
         String password = RandomStringUtils.randomAlphabetic(10);
 
         Response response = UserApi.loginUser(email, password);

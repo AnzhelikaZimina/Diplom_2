@@ -29,9 +29,7 @@ public class UserApi {
                 .when()
                 .post("/api/auth/register");
 
-        if (response.statusCode() == 201) {
-            createdUsers.add(request);
-        }
+        createdUsers.add(request);
         return response;
     }
 

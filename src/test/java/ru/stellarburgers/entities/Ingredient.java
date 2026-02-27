@@ -15,5 +15,4 @@ public class Ingredient {
     private String image;
     private String imageMobile;
     private String imageLarge;
-    private int __v;
 }

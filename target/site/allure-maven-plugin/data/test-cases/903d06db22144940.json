@@ -1,0 +1,161 @@
+{
+  "uid" : "903d06db22144940",
+  "name" : "Проверка создания заказа с ингредиентами",
+  "fullName" : "ru.stellarburgers.tests.CreateOrderTest.orderShouldBeCreatedWithIngredients",
+  "historyId" : "2467f6b9d7a135313aa9a2a5db642b0d",
+  "time" : {
+    "start" : 1772198410936,
+    "stop" : 1772198415566,
+    "duration" : 4630
+  },
+  "description" : "Тест создает заказ с ингредиентами и проверяет, что заказ успешно создан",
+  "descriptionHtml" : "<p>Тест создает заказ с ингредиентами и проверяет, что заказ успешно создан</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест создает заказ с ингредиентами и проверяет, что заказ успешно создан",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаём нового пользователя",
+      "time" : {
+        "start" : 1772198410936,
+        "stop" : 1772198411301,
+        "duration" : 365
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "request",
+        "value" : "CreateUserRequest(email=qhtrwxlyix@test.com, password=xnUlgiGLdp, name=TestUser)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Логинимся под пользователем",
+      "time" : {
+        "start" : 1772198411301,
+        "stop" : 1772198411663,
+        "duration" : 362
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "qhtrwxlyix@test.com"
+      }, {
+        "name" : "password",
+        "value" : "xnUlgiGLdp"
+      } ],
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Получаем список ингредиентов",
+      "time" : {
+        "start" : 1772198411663,
+        "stop" : 1772198411963,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Создаём заказ",
+      "time" : {
+        "start" : 1772198411964,
+        "stop" : 1772198415272,
+        "duration" : 3308
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "request",
+        "value" : "CreateOrderRequest(ingredients=[61c0c5a71d1f82001bdaaa6d, 61c0c5a71d1f82001bdaaa6f, 61c0c5a71d1f82001bdaaa70])"
+      }, {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YTE5YTBiOTg0MjcwMDAxYmU1ODczZCIsImlhdCI6MTc3MjE5ODQxMSwiZXhwIjoxNzcyMTk5NjExfQ.qySvoSUNA_E1B6m43Y2mFzojtFneg6KJawBMHU5oZZw"
+      } ],
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Проверка статуса и сообщения для успешного заказа",
+      "time" : {
+        "start" : 1772198415272,
+        "stop" : 1772198415566,
+        "duration" : 294
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@c335b9"
+      } ],
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.stellarburgers.tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.stellarburgers.tests.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "orderShouldBeCreatedWithIngredients"
+  }, {
+    "name" : "suite",
+    "value" : "ru.stellarburgers.tests.CreateOrderTest"
+  }, {
+    "name" : "host",
+    "value" : "Anzhelika_PC"
+  }, {
+    "name" : "thread",
+    "value" : "13176@Anzhelika_PC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "903d06db22144940.json",
+  "parameterValues" : [ ]
+}
